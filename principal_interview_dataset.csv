@@ -1,0 +1,24 @@
+﻿Variable,Type,Description,Possible Coding,Value
+principal_communication,ratio,discussions between the principal and agent,0-100%,4.44
+principal_negotioation,ratio,confirming for agreement with the terms set by the TTMD,0-100%,5.93
+principal_adjustments,ratio,any changes with the service,0-100%,2.22
+principal_bidding,ratio,term used for the stage in procurement in which bus operators bid an amount to provide the service,0-100%,1.48
+principal_procurement,ratio,Process of acquiring bus operators to provide the service,0-100%,1.48
+principal_power_dynamics,ratio,The authority or leverage that the principal or the agent has over the other,0-100%,8.15
+principal_agreement,ratio,consensus between principal and agent,0-100%,0.74
+principal_monitoring,ratio,monitoring mechanisms in place by both agent and principal,0-100%,11.85
+principal_understaffed,ratio,lack of TTMD personnel to conduct inspections,0-100%,1.48
+principal_operational_efficiency,ratio,The number of personnel and buses to achieve optimum service quality (timeliness),0-100%,8.89
+principal_service_delivery,ratio,providing a service (i.e.; transportation) to the public,0-100%,2.96
+principal_route_management,ratio,assessment and changes in routes,0-100%,3.7
+principal_operations_management,ratio,management of operations,0-100%,0.74
+principal_external_factor,ratio,pertains to lack of drivers and traffic,0-100%,1.48
+principal_operator_difficulties,ratio,issues occuring on the agent side (i.e. parking spaces; personnel management),0-100%,1.48
+principal_social_service,ratio,QCBAP as a public good,0-100%,2.22
+principal_adaptation_to_changes,ratio,changes in the TOR throughout the implementation of the program,0-100%,0.74
+principal_clearness_of_provisions,ratio,all necessary requirements; guidelines; or provisions are listed,0-100%,2.22
+principal_compliance,ratio,adherence of operators and personnel of the LGU to the rules; regulations; and terms of reference,0-100%,22.96
+principal_compensation,ratio,circumstances in which the bus operators are or aren't compensated,0-100%,1.48
+principal_costs,ratio,contract price; costs for adjustments; fees (i.e. gasoline),0-100%,6.67
+principal_sustainability,ratio,long-term implementation of the service,0-100%,0.74
+principal_penalties,ratio,causes for penalties and liquidation of violations,0-100%,5.19

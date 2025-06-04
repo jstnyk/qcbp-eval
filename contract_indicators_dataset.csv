@@ -1,0 +1,18 @@
+﻿Variable,Type,Description,Possible Coding,Value,Notes
+incentives_included,Binary,Are incentives or bonuses mentioned?,Yes / No,No,TOR focuses on compliance; monitoring; and penalties; does not offer performance bonuses or incentives.
+monitoring_freq,Ordinal,Frequency of monitoring/inspection,None; Occasional; Regular; Continuous,Regular,TOR assigns TTMD inspectors to conduct random inspections; incident reporting required; wrap inspections as well.
+risk_allocation_type,Categorical,Risk borne by operator vs. government,Operator; Govt; Shared,Shared,Operator bears operational risks (drivers; units; compliance); City bears regulatory and infrastructure burden.
+penalties_defined,Binary,Are penalties for non-compliance defined?,Yes / No,Yes,Penalties for breach of contract defined; e.g. termination; suspension; fines
+reporting_requirements,Binary,Incident reporting requirements,Yes / No,Yes,TTMD is required to provide written incident reports to Bus Operator.
+driver_qualifications,Binary,Driver qualifications explicitly stated,Yes / No,Yes,TOR lists: Professional Driver’s License; NC III Cert; health clearance; NBI clearance; drug test; attire
+conductor_qualifications,Binary,Conductor qualifications explicitly stated,Yes / No,Yes,Conductor’s License; health clearance; NBI clearance; drug test; attire required
+ridership_tracking_required,Binary,Is there a requirement for ridership tracking?,Yes / No,Yes,Integration with QCitizen ID; provision for scanning devices and future fare collection systems
+cost_adjustment_clause,Binary,Price adjustment clause included,Yes / No,Yes,Section explicitly allows for price adjustment under R.A. 9184 in response to legal/regulatory changes
+termination_conditions,Binary,Termination conditions clearly stated,Yes / No,Yes,Cancellable due to force majeure; unresolved disputes; LGU/NGA projects disrupting route operations
+uniform_and_behavioral_standards,Binary,Presence of uniform and behavior standards,Yes / No,Yes,Includes specific dress code; behavioral expectations; and penalties for violations
+service_schedule_defined,Binary,Are schedules/routes rigidly defined,Yes / No,Yes,"Daily service schedule is fixed; ""trips rendered per day"" are used as basis for payment"
+dispute_resolution_mechanism,Binary,Whether contract specifies procedures for resolving disputes,Yes / No,Yes,Amicable settlement first; arbitration or courts if unresolved
+bus_standards_defined,Binary,Are there clearly defined standards for bus units?,Yes / No,Yes,Section IX specifies capacity; AC; wrap; Wi-Fi; GPS; signage; emergency exits; etc.
+tech_integration_required,Binary,Is integration with tech systems mandated? (e.g.; GPS; ridership; Wi-Fi),Yes / No,Yes,Wi-Fi; GPS with QC integration; and ridership tracking systems are required.
+data_reporting_required,Binary,Is the operator required to provide usage/operations data?,Yes / No,Yes,Daily trip tickets; SOA; billing reports; and actual trip reports are required monthly.
+bus_deployment_schedule_required,Binary,Is a detailed deployment schedule required?,Yes / No,Yes,Bus deployment schedule must be submitted (Section VIII.g).
