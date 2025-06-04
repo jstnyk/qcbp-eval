@@ -20,26 +20,26 @@ library(ggplot2)
 
 # Load the data
 
-satisfaction_data <- read.csv("Datasets/passenger_satisfaction_survey_dataset.csv")
+satisfaction_data <- read.csv("datasets/passenger_satisfaction_survey_dataset.csv")
 # str(satisfaction_data)
 # summary(satisfaction_data)
 
 satisfaction_data <- satisfaction_data |>
   rename(Route = route)
 
-contract_data <- read.csv("Datasets/contract_indicators_dataset.csv")
+contract_data <- read.csv("datasets/contract_indicators_dataset.csv")
 # str(contract_data)
 # summary(contract_data)
 
-ridership_data <- read.csv("Datasets/ridership_dataset.csv")
+ridership_data <- read.csv("datasets/ridership_dataset.csv")
 # str(ridership_data)
 # summary(ridership_data)
 
-missed_data <- read.csv("Datasets/missed_trips_dataset.csv")
+missed_data <- read.csv("datasets/missed_trips_dataset.csv")
 # str(missed_data)
 # summary(missed_data)
 
-principal_data <- read.csv("Datasets/principal_interview_dataset.csv")
+principal_data <- read.csv("datasets/principal_interview_dataset.csv")
 # str(principal_data)
 # summary(principal_data)
 
@@ -58,7 +58,7 @@ numeric_summary <- function(df) {
 
 #####
 
-# Encoding contract indicators for SEM
+# Encoding/fixing indicators for SEM
 contract_data_encoded <- contract_data
 
 # Apply mapping
@@ -77,3 +77,8 @@ contract_data_encoded$Value <- dplyr::case_when(
   
   TRUE ~ NA_real_
 )
+
+# Check result
+# str(contract_data_encoded)
+# summary(contract_data_encoded$Value)
+
