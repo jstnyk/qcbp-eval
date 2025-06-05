@@ -89,7 +89,75 @@ merged_data$Ridership <- scale(merged_data$Ridership)
 merged_data$Compliance_Rate <- scale(merged_data$Compliance_Rate)
 
 # -------------------------------------------------------
-# 5. DEFINE SEM MODEL (measurement + structural)
+# 5a. CFA (reliability testing)
+# -------------------------------------------------------
+
+model_monitoring <- '
+  Monitoring =~ arrival_punctuality_sat + bus_frequency_sat + Ridership
+'
+
+fit_monitoring <- cfa(model_monitoring, data = merged_data, ordered = c("arrival_punctuality_sat", "bus_frequency_sat"))
+summary(fit_monitoring, fit.measures = TRUE, standardized = TRUE)
+
+model_compliance <- '
+  Compliance =~ driver_behavior_sat + bus_cleanliness_sat + ride_comfort_sat + Compliance_Rate
+'
+
+fit_compliance <- cfa(model_compliance, data = merged_data, ordered = c("driver_behavior_sat", "bus_cleanliness_sat", "ride_comfort_sat"))
+summary(fit_compliance, fit.measures = TRUE, standardized = TRUE)
+
+
+# Model for Info Asym has only two indicators (info_access_sat and route_convenience_sat),
+# It is not recommended to run a CFA with only two indicators, as it cannot be computed (lacking necessary degrees of freedom).
+
+model_infoasym <- '
+  InfoAsymmetry =~ info_access_sat + route_convenience_sat
+'
+
+fit_infoasym <- cfa(model_infoasym,
+                    data = merged_data,
+                    ordered = c("info_access_sat", "route_convenience_sat"),
+                    se = "none", test = "none")  # Suppress error-prone outputs
+
+summary(fit_infoasym, standardized = TRUE)
+
+
+model_efficiency <- '
+  Efficiency =~ boarding_ease_sat + in_bus_movement_sat + route_convenience_sat +
+                bus_frequency_sat + arrival_punctuality_sat + on_time_arrival_sat
+'
+
+fit_efficiency <- cfa(model_efficiency, data = merged_data,
+                      ordered = c("boarding_ease_sat", "in_bus_movement_sat", "route_convenience_sat",
+                                  "bus_frequency_sat", "arrival_punctuality_sat", "on_time_arrival_sat"))
+summary(fit_efficiency, fit.measures = TRUE, standardized = TRUE)
+
+model_effectiveness <- '
+  Effectiveness =~ driver_behavior_sat + safety_in_bus_sat + safety_at_stop_sat +
+                   seat_comfort_sat + bus_cleanliness_sat + temperature_comfort_sat + ride_comfort_sat
+'
+
+fit_effectiveness <- cfa(model_effectiveness, data = merged_data,
+                         ordered = c("driver_behavior_sat", "safety_in_bus_sat", "safety_at_stop_sat",
+                                     "seat_comfort_sat", "bus_cleanliness_sat", "temperature_comfort_sat", "ride_comfort_sat"))
+summary(fit_effectiveness, fit.measures = TRUE, standardized = TRUE)
+
+# Again, Model for Sustainability has only two indicators (bus_sufficiency_sat, info_access_sat),
+# It is not recommended to run a CFA with only two indicators, as it cannot be computed (lacking necessary degrees of freedom).
+
+model_sustainability <- '
+  Sustainability =~ bus_sufficiency_sat + info_access_sat
+'
+
+fit_sustainability <- cfa(model_sustainability,
+                          data = merged_data,
+                          ordered = c("bus_sufficiency_sat", "info_access_sat"),
+                          se = "none", test = "none")
+
+summary(fit_sustainability, standardized = TRUE)
+
+# -------------------------------------------------------
+# 5b. DEFINE SEM MODEL (measurement + structural)
 # -------------------------------------------------------
 
 sem_model <- '
