@@ -129,6 +129,16 @@ summary(fit, fit.measures = TRUE, standardized = TRUE)
 modindices(fit, sort. = TRUE, minimum.value = 10)
 
 # Visualize model (left to right layout)
-semPaths(fit, what = "std", whatLabels = "std", layout = "tree2",
-         edge.label.cex = 0.8, rotation = 2, sizeMan = 4, sizeLat = 6)
+semPaths(fit, what = "std", whatLabels = "std", layout = "tree",
+         edge.label.cex = 0.6, 
+         label.cex = 0.8,
+         rotation = 2, 
+         sizeMan = 4, 
+         sizeLat = 6,
+         mar = c(2, 2, 2, 2),
+         width = 16, height = 10,
+         posCol = "darkblue", # Darker blue for positive
+         negCol = "red4",     # Darker red for negative
+         fade = FALSE
+         )
 
