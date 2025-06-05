@@ -1,4 +1,4 @@
-Route,Year,Month,Missed_Trips,Compliance_Rate,Scheduled_Trips,Weekdays,WeekdayTrips,Saturdays,SaturdayTrips,SundayHolidays,SundayHolidayTrips,,,,,,,,,,,
+route,year,month,Missed_Trips,Compliance_Rate,Scheduled_Trips,Weekdays,WeekdayTrips,Saturdays,SaturdayTrips,SundayHolidays,SundayHolidayTrips,,,,,,,,,,,
 1,2023,1,37,0.98666186,2774,22,2332,4,232,5,210,,,,,,,,,,,
 1,2023,2,92,0.963492063,2520,20,2120,4,232,4,168,,,,,,,,,,,
 1,2023,3,59,0.979210712,2838,23,2438,4,232,4,168,,,,,,,,,,,
