@@ -44,8 +44,8 @@ To replicate the analysis:
 
 List of required packages or libraries:
 
--   [R version 4.5.0 (2025-04-11 ucrt)]
--   [lavaan", "psych", "readr", "dplyr", "tidyr", "ggplot2", "semPlot"]"
+-   R version 4.5.0 (2025-04-11 ucrt)
+-   Packages: lavaan, psych, readr, dplyr, tidyr, ggplot2, semPlot
 
 You can install R packages with:
 
@@ -67,9 +67,9 @@ If you use this data or code, please cite:
 
 For questions or more information, please contact:
 
--   **Name:** [Justine Yuki Ocate]
--   **Email:** [[jmocate\@up.edu.ph](mailto:jmocate@up.edu.ph){.email}]
--   **Institution:** [National College of Public Administration and Governance, University of the Philippines Diliman]
+-   **Name:** Justine Yuki Ocate
+-   **Email:** [jmocate\@up.edu.ph](mailto:jmocate@up.edu.ph){.email}
+-   **Institution:** National College of Public Administration and Governance, University of the Philippines Diliman
 
 ------------------------------------------------------------------------
 
