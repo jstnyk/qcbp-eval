@@ -53,7 +53,6 @@ Install packages with:
 =======
 -   R version 4.5.0 (2025-04-11 ucrt)
 -   Packages: lavaan, psych, readr, dplyr, tidyr, ggplot2, semPlot
->>>>>>> a0465e8f1d9fc1cb370b1d39d8c643ba7c91fd70
 
 ```r
 install.packages(c("lavaan", "psych", "readr", "dplyr", "tidyr", "ggplot2", "semPlot"))
@@ -79,7 +78,6 @@ If you use this data or code, please cite:
 
 For questions or more information, please contact:
 
-<<<<<<< HEAD
 * **Name:** Justine Yuki Ocate
 * **Email:** [jmocate@up.edu.ph](mailto:jmocate@up.edu.ph)
 * **Institution:** National College of Public Administration and Governance, University of the Philippines Diliman
@@ -87,7 +85,6 @@ For questions or more information, please contact:
 -   **Name:** Justine Yuki Ocate
 -   **Email:** [jmocate\@up.edu.ph](mailto:jmocate@up.edu.ph){.email}
 -   **Institution:** National College of Public Administration and Governance, University of the Philippines Diliman
->>>>>>> a0465e8f1d9fc1cb370b1d39d8c643ba7c91fd70
 
 ---
 
