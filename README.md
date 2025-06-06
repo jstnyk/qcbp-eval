@@ -34,7 +34,7 @@ To replicate the analysis:
     ```bash
     cd qcbp-eval
     ```
-3. Install required dependencies (see [Requirements](#requirements)).
+3. Install required dependencies (see [Requirements](https://github.com/jstnyk/qcbp-eval/tree/main?tab=readme-ov-file#-requirements-requirements)).
 
 4. Run the main analysis script:
     ```bash
@@ -43,17 +43,12 @@ To replicate the analysis:
 
 ---
 
-## 🧰 Requirements {#requirements}
+## 🧰 Requirements
 
 - R version 4.5.0 (2025-04-11 ucrt)  
 - R packages: `lavaan`, `psych`, `readr`, `dplyr`, `tidyr`, `ggplot2`, `semPlot`
 
-<<<<<<< HEAD
 Install packages with:
-=======
--   R version 4.5.0 (2025-04-11 ucrt)
--   Packages: lavaan, psych, readr, dplyr, tidyr, ggplot2, semPlot
-
 ```r
 install.packages(c("lavaan", "psych", "readr", "dplyr", "tidyr", "ggplot2", "semPlot"))
 ```
@@ -81,10 +76,6 @@ For questions or more information, please contact:
 * **Name:** Justine Yuki Ocate
 * **Email:** [jmocate@up.edu.ph](mailto:jmocate@up.edu.ph)
 * **Institution:** National College of Public Administration and Governance, University of the Philippines Diliman
-=======
--   **Name:** Justine Yuki Ocate
--   **Email:** [jmocate\@up.edu.ph](mailto:jmocate@up.edu.ph){.email}
--   **Institution:** National College of Public Administration and Governance, University of the Philippines Diliman
 
 ---
 
