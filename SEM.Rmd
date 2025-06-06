@@ -1,0 +1,213 @@
+> summary(fit, fit.measures = TRUE, standardized = TRUE)
+lavaan 0.6-19 ended normally after 862 iterations
+
+  Estimator                                       DWLS
+  Optimization method                           NLMINB
+  Number of model parameters                       103
+
+                                                  Used       Total
+  Number of observations                           392         481
+
+Model Test User Model:
+                                              Standard      Scaled
+  Test Statistic                               118.506     237.202
+  Degrees of freedom                                97          97
+  P-value (Chi-square)                           0.068       0.000
+  Scaling correction factor                                  0.601
+  Shift parameter                                           39.904
+    simple second-order correction                                
+
+Model Test Baseline Model:
+
+  Test statistic                             52452.745   11754.076
+  Degrees of freedom                               136         136
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  4.503
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000       0.988
+  Tucker-Lewis Index (TLI)                       0.999       0.983
+                                                                  
+  Robust Comparative Fit Index (CFI)                            NA
+  Robust Tucker-Lewis Index (TLI)                               NA
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.024       0.061
+  90 Percent confidence interval - lower         0.000       0.051
+  90 Percent confidence interval - upper         0.037       0.071
+  P-value H_0: RMSEA <= 0.050                    1.000       0.035
+  P-value H_0: RMSEA >= 0.080                    0.000       0.001
+                                                                  
+  Robust RMSEA                                                  NA
+  90 Percent confidence interval - lower                        NA
+  90 Percent confidence interval - upper                        NA
+  P-value H_0: Robust RMSEA <= 0.050                            NA
+  P-value H_0: Robust RMSEA >= 0.080                            NA
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.041       0.041
+
+Parameter Estimates:
+
+  Parameterization                               Delta
+  Standard errors                           Robust.sem
+  Information                                 Expected
+  Information saturated (h1) model        Unstructured
+
+Latent Variables:
+                    Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Monitoring =~                                                          
+    arrvl_pnctlty_     1.000                               0.510    0.510
+    bus_freqncy_st     0.752    0.161    4.677    0.000    0.383    0.383
+    Ridership         -0.470    0.273   -1.724    0.085   -0.240   -0.237
+  Compliance =~                                                          
+    driver_bhvr_st     1.000                                  NA       NA
+    bus_clnlnss_st     0.005    0.083    0.064    0.949       NA       NA
+    ride_comfrt_st     0.022    0.344    0.064    0.949       NA       NA
+    Compliance_Rat     0.023    0.354    0.064    0.949       NA       NA
+  InfoAsymmetry =~                                                       
+    info_access_st     1.000                               0.228    0.228
+    rout_cnvnnc_st     2.252    1.111    2.027    0.043    0.514    0.514
+  Efficiency =~                                                          
+    boarding_es_st     1.000                               0.837    0.837
+    in_bs_mvmnt_st     0.980    0.025   38.678    0.000    0.820    0.820
+    rout_cnvnnc_st     0.666    0.663    1.005    0.315    0.557    0.557
+    bus_freqncy_st     0.677    0.209    3.247    0.001    0.566    0.566
+    arrvl_pnctlty_     0.647    0.279    2.319    0.020    0.541    0.541
+    on_tim_rrvl_st     1.035    0.034   30.047    0.000    0.866    0.866
+  Effectiveness =~                                                       
+    driver_bhvr_st     1.000                               0.533    0.533
+    safety_n_bs_st     1.754   22.339    0.079    0.937    0.936    0.936
+    safty_t_stp_st     1.743   22.203    0.079    0.937    0.930    0.930
+    seat_comfrt_st     1.728   22.010    0.079    0.937    0.922    0.922
+    bus_clnlnss_st     1.762   22.429    0.079    0.937    0.940    0.940
+    tmprtr_cmfrt_s     1.761   22.438    0.079    0.937    0.939    0.939
+    ride_comfrt_st     1.774   22.555    0.079    0.937    0.946    0.946
+  Sustainability =~                                                      
+    bus_sffcncy_st     1.000                               0.817    0.817
+    info_access_st     0.798    0.285    2.803    0.005    0.651    0.651
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Efficiency ~                                                          
+    Monitoring        0.914    0.805    1.136    0.256    0.557    0.557
+    Compliance       -0.043    0.250   -0.174    0.862       NA       NA
+    InfoAsymmetry     2.522    1.626    1.551    0.121    0.688    0.688
+  Effectiveness ~                                                       
+    Monitoring        0.419    5.081    0.082    0.934    0.400    0.400
+    Compliance       -0.038    0.484   -0.079    0.937       NA       NA
+    InfoAsymmetry     1.171   14.320    0.082    0.935    0.501    0.501
+  Sustainability ~                                                      
+    Monitoring        1.200    0.682    1.759    0.079    0.749    0.749
+    Compliance       -0.030    0.170   -0.176    0.860       NA       NA
+    InfoAsymmetry     2.056    1.564    1.315    0.189    0.575    0.575
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Monitoring ~~                                                         
+    Compliance        0.123    1.531    0.080    0.936    0.132    0.132
+    InfoAsymmetry     0.014    0.089    0.161    0.872    0.123    0.123
+  Compliance ~~                                                         
+    InfoAsymmetry     0.033    0.831    0.040    0.968    0.079    0.079
+ .Efficiency ~~                                                         
+   .Effectiveness     0.156    1.897    0.082    0.934    1.162    1.162
+   .Sustainability    0.075    0.228    0.329    0.742    1.669    1.669
+ .Effectiveness ~~                                                      
+   .Sustainability    0.120    1.462    0.082    0.934    2.172    2.172
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .Ridership        -0.012    0.056   -0.218    0.827   -0.012   -0.012
+   .Compliance_Rat   -0.013    0.052   -0.241    0.809   -0.013   -0.013
+
+Thresholds:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    arrvl_pnctl_|1   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    arrvl_pnctl_|2   -1.951    0.134  -14.547    0.000   -1.951   -1.951
+    arrvl_pnctl_|3   -1.228    0.084  -14.583    0.000   -1.228   -1.228
+    arrvl_pnctl_|4   -0.589    0.068   -8.715    0.000   -0.589   -0.589
+    bs_frqncy_st|1   -2.425    0.209  -11.600    0.000   -2.425   -2.425
+    bs_frqncy_st|2   -1.996    0.139  -14.339    0.000   -1.996   -1.996
+    bs_frqncy_st|3   -1.284    0.087  -14.836    0.000   -1.284   -1.284
+    bs_frqncy_st|4   -0.683    0.069   -9.885    0.000   -0.683   -0.683
+    drvr_bhvr_st|1   -2.569    0.245  -10.496    0.000   -2.569   -2.569
+    drvr_bhvr_st|2   -2.319    0.187  -12.376    0.000   -2.319   -2.319
+    drvr_bhvr_st|3   -1.686    0.110  -15.343    0.000   -1.686   -1.686
+    drvr_bhvr_st|4   -0.981    0.076  -12.941    0.000   -0.981   -0.981
+    bs_clnlnss_s|1   -2.425    0.209  -11.600    0.000   -2.425   -2.425
+    bs_clnlnss_s|2   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    bs_clnlnss_s|3   -1.713    0.112  -15.299    0.000   -1.713   -1.713
+    bs_clnlnss_s|4   -1.023    0.077  -13.282    0.000   -1.023   -1.023
+    rd_cmfrt_st|t1   -2.425    0.209  -11.600    0.000   -2.425   -2.425
+    rd_cmfrt_st|t2   -2.319    0.187  -12.376    0.000   -2.319   -2.319
+    rd_cmfrt_st|t3   -1.803    0.119  -15.091    0.000   -1.803   -1.803
+    rd_cmfrt_st|t4   -1.079    0.079  -13.693    0.000   -1.079   -1.079
+    inf_ccss_st|t1   -2.425    0.209  -11.600    0.000   -2.425   -2.425
+    inf_ccss_st|t2   -2.319    0.187  -12.376    0.000   -2.319   -2.319
+    inf_ccss_st|t3   -1.447    0.094  -15.311    0.000   -1.447   -1.447
+    inf_ccss_st|t4   -0.818    0.072  -11.406    0.000   -0.818   -0.818
+    rt_cnvnnc_st|1   -2.319    0.187  -12.376    0.000   -2.319   -2.319
+    rt_cnvnnc_st|2   -2.162    0.161  -13.419    0.000   -2.162   -2.162
+    rt_cnvnnc_st|3   -1.545    0.100  -15.417    0.000   -1.545   -1.545
+    rt_cnvnnc_st|4   -0.941    0.075  -12.590    0.000   -0.941   -0.941
+    bordng_s_st|t1   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    bordng_s_st|t2   -2.162    0.161  -13.419    0.000   -2.162   -2.162
+    bordng_s_st|t3   -1.686    0.110  -15.343    0.000   -1.686   -1.686
+    bordng_s_st|t4   -0.882    0.073  -12.052    0.000   -0.882   -0.882
+    in_bs_mvmnt_|1   -2.569    0.245  -10.496    0.000   -2.569   -2.569
+    in_bs_mvmnt_|2   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    in_bs_mvmnt_|3   -1.411    0.093  -15.239    0.000   -1.411   -1.411
+    in_bs_mvmnt_|4   -0.691    0.069   -9.981    0.000   -0.691   -0.691
+    on_tm_rrvl_s|1   -2.162    0.161  -13.419    0.000   -2.162   -2.162
+    on_tm_rrvl_s|2   -2.045    0.145  -14.089    0.000   -2.045   -2.045
+    on_tm_rrvl_s|3   -1.545    0.100  -15.417    0.000   -1.545   -1.545
+    on_tm_rrvl_s|4   -0.740    0.070  -10.557    0.000   -0.740   -0.740
+    sfty_n_bs_st|1   -2.425    0.209  -11.600    0.000   -2.425   -2.425
+    sfty_n_bs_st|2   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    sfty_n_bs_st|3   -1.741    0.114  -15.244    0.000   -1.741   -1.741
+    sfty_n_bs_st|4   -1.034    0.077  -13.366    0.000   -1.034   -1.034
+    sfty_t_stp_s|1   -2.569    0.245  -10.496    0.000   -2.569   -2.569
+    sfty_t_stp_s|2   -2.319    0.187  -12.376    0.000   -2.319   -2.319
+    sfty_t_stp_s|3   -1.741    0.114  -15.244    0.000   -1.741   -1.741
+    sfty_t_stp_s|4   -1.045    0.078  -13.449    0.000   -1.045   -1.045
+    st_cmfrt_st|t1   -2.425    0.209  -11.600    0.000   -2.425   -2.425
+    st_cmfrt_st|t2   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    st_cmfrt_st|t3   -1.686    0.110  -15.343    0.000   -1.686   -1.686
+    st_cmfrt_st|t4   -0.951    0.075  -12.679    0.000   -0.951   -0.951
+    tmprtr_cmfr_|1   -2.319    0.187  -12.376    0.000   -2.319   -2.319
+    tmprtr_cmfr_|2   -2.234    0.172  -12.960    0.000   -2.234   -2.234
+    tmprtr_cmfr_|3   -1.611    0.105  -15.415    0.000   -1.611   -1.611
+    tmprtr_cmfr_|4   -0.901    0.074  -12.233    0.000   -0.901   -0.901
+    bs_sffcncy_s|1   -2.569    0.245  -10.496    0.000   -2.569   -2.569
+    bs_sffcncy_s|2   -1.996    0.139  -14.339    0.000   -1.996   -1.996
+    bs_sffcncy_s|3   -1.284    0.087  -14.836    0.000   -1.284   -1.284
+    bs_sffcncy_s|4   -0.589    0.068   -8.715    0.000   -0.589   -0.589
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .arrvl_pnctlty_    0.100                               0.100    0.100
+   .bus_freqncy_st    0.260                               0.260    0.260
+   .Ridership         0.962    0.127    7.569    0.000    0.962    0.944
+   .driver_bhvr_st    3.622                               3.622    3.622
+   .bus_clnlnss_st    0.113                               0.113    0.113
+   .ride_comfrt_st    0.090                               0.090    0.090
+   .Compliance_Rat    0.956    0.164    5.823    0.000    0.956    1.002
+   .info_access_st    0.327                               0.327    0.327
+   .rout_cnvnnc_st   -0.004                              -0.004   -0.004
+   .boarding_es_st    0.300                               0.300    0.300
+   .in_bs_mvmnt_st    0.327                               0.327    0.327
+   .on_tim_rrvl_st    0.250                               0.250    0.250
+   .safety_n_bs_st    0.125                               0.125    0.125
+   .safty_t_stp_st    0.136                               0.136    0.136
+   .seat_comfrt_st    0.150                               0.150    0.150
+   .tmprtr_cmfrt_s    0.117                               0.117    0.117
+   .bus_sffcncy_st    0.333                               0.333    0.333
+    Monitoring        0.260    0.167    1.557    0.120    1.000    1.000
+    Compliance       -3.344   50.105   -0.067    0.947       NA       NA
+    InfoAsymmetry     0.052    0.079    0.662    0.508    1.000    1.000
+   .Efficiency        0.109    0.259    0.421    0.674    0.156    0.156
+   .Effectiveness     0.165    4.118    0.040    0.968    0.582    0.582
+   .Sustainability    0.019    0.212    0.088    0.930    0.028    0.028
